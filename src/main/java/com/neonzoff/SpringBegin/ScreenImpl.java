@@ -11,6 +11,7 @@ import org.springframework.stereotype.Component;
 public class ScreenImpl implements Screen {
     private final int DPI;
     private final int RefreshRate;
+    private final int[][] pixels = {{1, 2, 3}, {4, 5, 6}, {7, 8, 9}};
 
     public ScreenImpl() {
         this.DPI = 445;

@@ -16,9 +16,9 @@ public class SpringBeginApplication {
         Phone phone = context.getBean(Phone.class);
 
 
-        Serializator serializator = context.getBean(SerializatorYAML.class);
-//        Serializator serializator = context.getBean(SerializatorXML.class);
+        Serializator serializator = context.getBean(SerializatorXML.class);
 //        Serializator serializator = context.getBean(SerializatorJSON.class);
+//        Serializator serializator = context.getBean(SerializatorYAML.class);
         serializator.serialize(phone);
 
     }
